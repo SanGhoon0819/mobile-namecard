@@ -1,0 +1,345 @@
+
+:root{
+  --bronze:#B9792A;
+  --ink:#111111;
+  --bg:#F6F3EE;
+  --line:#E6E0D8;
+  --pink:#D91B73;
+  --navy:#17366D;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  width:100%;
+  max-width:560px;
+  margin:0 auto;
+  background:#fff;
+  min-height:100vh;
+}
+.header{
+  padding:18px 16px 14px;
+  border-top:4px solid var(--bronze);
+}
+.brandrow{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand{
+  font-weight:900;
+  letter-spacing:2.4px;
+  font-size:19px;
+  line-height:1.05;
+}
+.brand small{
+  display:block;
+  font-size:8px;
+  letter-spacing:3.5px;
+  color:#777;
+  margin-top:4px;
+}
+.person{text-align:right; min-width:0}
+.role{font-size:11px;font-weight:700;color:#333}
+.name{
+  font-size:25px;
+  font-weight:900;
+  line-height:1.08;
+  white-space:nowrap;
+}
+.phone{
+  display:block;
+  margin-top:6px;
+  color:var(--pink);
+  font-size:21px;
+  line-height:1.1;
+  font-weight:900;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 10px;
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+  font-size:12px;
+  line-height:1.25;
+  font-weight:800;
+}
+.points span{white-space:nowrap}
+.points b{color:var(--navy)}
+
+.hero img,.aerial img,.planimg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  padding:12px 14px 14px;
+}
+.btn{
+  height:48px;
+  border-radius:9px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:900;
+}
+.call{background:#111;color:#fff}
+.sms{border:1px solid var(--line);color:#111;background:#fff}
+
+.section{
+  padding:26px 14px;
+  border-top:8px solid var(--bg);
+}
+.kicker{
+  font-size:10px;
+  color:var(--bronze);
+  font-weight:900;
+  letter-spacing:.1em;
+}
+h2{
+  font-size:22px;
+  line-height:1.32;
+  margin:6px 0 10px;
+  word-break:keep-all;
+  overflow-wrap:normal;
+}
+.desc{
+  font-size:13px;
+  line-height:1.68;
+  color:#555;
+  margin:0;
+  word-break:keep-all;
+}
+.cards{
+  display:grid;
+  gap:8px;
+  margin-top:14px;
+}
+.card{
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:14px;
+}
+.card b{
+  display:block;
+  font-size:14px;
+  margin-bottom:5px;
+}
+.card span{
+  font-size:11px;
+  color:#777;
+  line-height:1.5;
+  word-break:keep-all;
+}
+
+.tabs,.subtabs{
+  display:flex;
+  gap:7px;
+  margin:16px 0 10px;
+}
+.tabs button,.subtabs button{
+  flex:1;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:8px;
+  height:40px;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+}
+.tabs button.active,.subtabs button.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+.planbox{
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+}
+.planhead{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:8px;
+  padding:12px 12px 9px;
+}
+.planhead strong{
+  font-size:21px;
+  line-height:1;
+  color:var(--bronze);
+}
+.planhead span{
+  font-size:11px;
+  color:#666;
+  font-weight:700;
+  white-space:nowrap;
+}
+.zoomnote{
+  font-size:10px;
+  color:#888;
+  text-align:center;
+  padding:8px 10px 10px;
+}
+.hidden{display:none}
+
+.aerial{
+  position:relative;
+  border-top:8px solid var(--bg);
+}
+.aerialcopy{
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  background:rgba(15,15,15,.80);
+  color:#fff;
+  padding:11px 12px;
+  border-radius:9px;
+  backdrop-filter:blur(4px);
+}
+.aerialcopy small{
+  display:block;
+  color:#D9A65E;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.1em;
+  margin-bottom:4px;
+}
+.aerialcopy strong{
+  display:block;
+  font-size:15px;
+  line-height:1.35;
+  word-break:keep-all;
+}
+
+.homepage{
+  display:block;
+  margin-top:14px;
+  border:1px solid var(--bronze);
+  color:var(--bronze);
+  padding:13px;
+  text-align:center;
+  border-radius:9px;
+  font-size:13px;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.contact{
+  background:#151515;
+  color:#fff;
+  padding:28px 16px;
+}
+.contact .kicker{color:#D9A65E}
+.contact h2{margin-top:6px}
+.contact p{
+  font-size:12px;
+  color:#ccc;
+  line-height:1.65;
+  word-break:keep-all;
+}
+
+.sticky{
+  position:sticky;
+  bottom:0;
+  z-index:20;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:8px;
+  padding:9px 10px calc(9px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.96);
+  border-top:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+.sticky a{
+  height:47px;
+  border-radius:9px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:900;
+}
+.sticky .s{border:1px solid var(--line);color:#111;background:#fff}
+.sticky .c{background:var(--pink);color:#fff}
+
+.footer{
+  padding:16px 14px 84px;
+  font-size:9px;
+  color:#999;
+  line-height:1.55;
+  word-break:keep-all;
+}
+
+/* Mobile tuning: 360~430px */
+@media (max-width:430px){
+  .header{padding:16px 12px 13px}
+  .brandrow{gap:8px}
+  .brand{font-size:17px;letter-spacing:2px}
+  .brand small{font-size:7px;letter-spacing:3px}
+  .role{font-size:10px}
+  .name{font-size:23px}
+  .phone{font-size:20px}
+  .points{
+    gap:5px 8px;
+    font-size:11px;
+    margin-top:12px;
+    padding-top:10px;
+  }
+  .section{padding:23px 12px}
+  h2{
+    font-size:20px;
+    line-height:1.28;
+    letter-spacing:-0.02em;
+  }
+  .desc{font-size:12px;line-height:1.62}
+  .card{padding:12px}
+  .card b{font-size:13px}
+  .card span{font-size:10.5px}
+  .aerialcopy{
+    left:10px;right:10px;bottom:10px;
+    padding:10px 11px;
+  }
+  .aerialcopy strong{
+    font-size:14px;
+    line-height:1.3;
+  }
+}
+
+/* Narrow phones: 320~360px */
+@media (max-width:360px){
+  .header{padding-left:10px;padding-right:10px}
+  .brand{font-size:16px}
+  .name{font-size:21px}
+  .phone{font-size:18px}
+  .points{
+    font-size:10.5px;
+    gap:4px 7px;
+  }
+  .actions{padding-left:10px;padding-right:10px}
+  .section{padding-left:10px;padding-right:10px}
+  h2{font-size:19px}
+  .desc{font-size:11.5px}
+  .tabs button,.subtabs button{font-size:12px}
+  .aerialcopy strong{font-size:13px}
+}
