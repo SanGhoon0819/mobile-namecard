@@ -31,6 +31,17 @@
 .sticky{position:sticky;bottom:0;z-index:20;display:grid;grid-template-columns:.9fr 1.1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
 .sticky a{height:49px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:900}.sticky .s{border:1px solid var(--line);color:#111}.sticky .c{background:var(--pink);color:#fff}
 .footer{padding:18px 20px 88px;font-size:10px;color:#999;line-height:1.6}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:1000;padding:16px}.lightbox img{max-width:100%;max-height:92vh;object-fit:contain;background:#fff}.lightbox:target{display:flex}.close{position:absolute;top:14px;right:18px;color:#fff;font-size:32px;text-decoration:none}
+
+.video-section{padding:0 18px 18px;background:#fff}
+.video-wrap{position:relative;width:100%;aspect-ratio:9/16;max-height:720px;overflow:hidden;border-radius:12px;background:#000}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.detail-images{padding:0;background:#fff;border-top:9px solid var(--bg)}
+.detail-images img{display:block;width:100%;height:auto}
+.location-head{padding:26px 18px 16px;border-top:9px solid var(--bg);background:#fff}
+.location-head h2{font-size:20px;line-height:1.35;margin:6px 0 0;word-break:keep-all}
+.aerialcopy{display:none!important}
+@media(max-width:390px){.location-head h2{font-size:18px}.video-section{padding:0 14px 14px}}
+
 </style>
 <script>
 function showMain(type){
@@ -55,11 +66,17 @@ function show84(type){
 </section>
 
 <section class="hero"><img src="render-main.png" alt="인시그니아 반포 조감도"></section>
+<section class="video-section"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/BJV2hm3Mo8I?rel=0&playsinline=1" title="인시그니아 반포 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></section>
 <div class="actions"><a class="btn call" href="tel:01036671245">전화 상담</a><a class="btn sms" href="sms:01036671245">문자 문의</a></div>
 
-<section class="section"><div class="kicker">INSIGNIA BANPO</div><h2>반포 생활권의 신축 주거형 오피스텔</h2><p class="desc">구반포역 9호선 도보 3분, 래미안트리니원 맞은편. 59㎡와 84㎡ 타입으로 구성된 즉시 입주 가능한 신축 상품입니다.</p>
-<div class="cards"><div class="card"><b>59㎡</b><span>2Room · 1Bath · 거실 2면 개방</span></div><div class="card"><b>84㎡</b><span>3Room · 2Bath · 거실 및 침실 2면 개방</span></div><div class="card"><b>100% 자주식 주차</b><span>세대당 1.34대</span></div></div></section>
 
+
+<section class="detail-images" aria-label="인시그니아 반포 상세 안내">
+<img src="detail-01.png" alt="인시그니아 반포 입지 및 인사이트">
+<img src="detail-02.jpg" alt="인시그니아 반포 인사이트 밸류">
+<img src="detail-03.jpg" alt="인시그니아 반포 단지 배치 및 조망">
+<img src="detail-04.jpg" alt="인시그니아 반포 학군 안내">
+</section>
 <section class="section">
 <div class="kicker">UNIT PLAN</div><h2>타입별 평면도</h2><p class="desc">59㎡와 84㎡ 타입을 선택해서 비교해보세요.</p>
 
@@ -101,16 +118,14 @@ function show84(type){
 </div>
 </section>
 
-<section class="aerial">
-<img src="render-aerial.png" alt="인시그니아 반포 광역 조감도">
-<div class="aerialcopy"><small>BANPO LOCATION</small><strong>래미안트리니원 맞은편 · 구반포역 도보 3분</strong></div>
-</section>
+<section class="location-head"><div class="kicker">BANPO LOCATION</div><h2>래미안트리니원 맞은편 · 구반포역 도보 3분</h2></section>
+<section class="aerial"><img src="render-aerial.png" alt="인시그니아 반포 광역 조감도"></section>
 
 <section class="section"><div class="kicker">MORE INFORMATION</div><h2>상세 정보 확인</h2><p class="desc">입지환경, 커뮤니티, 사업개요 등 더 자세한 내용은 공식 안내 페이지에서 확인하실 수 있습니다.</p><a class="more" href="https://highendmoa.com/" target="_blank" rel="noopener">인시그니아 반포 홈페이지 보기</a></section>
 
 <section class="contact"><div class="kicker">CONTACT</div><h2>김지혜 팀장<br>010-3667-1245</h2><p>방문 상담, 세대 안내, 타입 문의는 전화 또는 문자로 편하게 연락주세요.</p></section>
 
-<div class="sticky"><a class="s" href="sms:01036671245">문자하기</a><a class="c" href="tel:01036671245">김지혜 팀장 전화</a></div>
+<div class="sticky"><a class="s" href="sms:01036671245">문자하기</a><a class="c" href="tel:01036671245">전화하기</a></div>
 <div class="footer">본 페이지는 분양 상담을 위한 모바일 안내 페이지입니다. 이미지 및 세부 사항은 실제 현장과 공식 안내자료를 기준으로 확인하시기 바랍니다.</div>
 </main>
 
