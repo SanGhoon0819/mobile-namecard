@@ -34,7 +34,7 @@
 
 .video-section{padding:0 18px 18px;background:#fff}
 .video-wrap{position:relative;width:100%;aspect-ratio:9/16;max-height:720px;overflow:hidden;border-radius:12px;background:#000}
-.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-wrap video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;background:#000}
 .detail-images{padding:0;background:#fff;border-top:9px solid var(--bg)}
 .detail-images img{display:block;width:100%;height:auto}
 .location-head{padding:26px 18px 16px;border-top:9px solid var(--bg);background:#fff}
@@ -66,7 +66,14 @@ function show84(type){
 </section>
 
 <section class="hero"><img src="render-main.png" alt="인시그니아 반포 조감도"></section>
-<section class="video-section"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/BJV2hm3Mo8I?rel=0&playsinline=1" title="인시그니아 반포 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></section>
+<section class="video-section">
+  <div class="video-wrap">
+    <video controls playsinline preload="metadata" poster="render-main.png">
+      <source src="kimjihye-shorts.mp4" type="video/mp4">
+      이 브라우저에서는 동영상 재생을 지원하지 않습니다.
+    </video>
+  </div>
+</section>
 
 
 
