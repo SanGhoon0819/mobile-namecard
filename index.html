@@ -15,7 +15,9 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
 .page{max-width:560px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 30px rgba(0,0,0,.05)}
 .header{padding:22px 22px 18px;border-top:5px solid var(--bronze)}.brandrow{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:900;letter-spacing:3px;font-size:21px}.brand small{display:block;font-size:9px;letter-spacing:4px;color:#777;margin-top:2px}
+.brand{font-weight:900;letter-spacing:0;font-size:21px;line-height:1.25;white-space:nowrap}.brand small{display:block;font-size:11px;font-weight:600;letter-spacing:0;color:#777;margin-bottom:5px}.brandrow .person{flex-shrink:0}
+@media(max-width:390px){.brandrow{gap:10px}.brand{font-size:18px}.brand small{font-size:10px}.brandrow .phone{font-size:20px}}
+@media(max-width:340px){.header{padding-left:16px;padding-right:16px}.brand{font-size:16px}.brandrow .phone{font-size:18px}}
 .person{text-align:right}.role{font-size:12px;color:#333;font-weight:700}.name{font-size:28px;font-weight:900;line-height:1.1}.phone{display:block;margin-top:7px;color:var(--pink);font-size:24px;font-weight:900;text-decoration:none}
 .points{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:17px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;font-weight:800}.points b{color:var(--navy)}
 .hero img,.aerial img,.planimg{width:100%;display:block}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:14px 18px 18px}.btn{height:50px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:900}.call{background:#111;color:#fff}.sms{border:1px solid var(--line);color:#111}
@@ -61,7 +63,7 @@ function show84(type){
 <body>
 <main class="page">
 <section class="header">
-<div class="brandrow"><div class="brand">INSIGNIA<small>BANPO</small></div><div class="person"><div class="role">팀장</div><div class="name">김지혜</div><a class="phone" href="tel:01036671245">010-3667-1245</a></div></div>
+<div class="brandrow"><div class="brand"><small>사평대로12 건물명</small>인시그니아반포</div><div class="person"><div class="role">팀장</div><div class="name">김지혜</div><a class="phone" href="tel:01036671245">010-3667-1245</a></div></div>
 <div class="points"><span>구반포역 도보 <b>3분</b></span><span><b>래미안트리니원 맞은편</b></span><span><b>즉시입주</b></span></div>
 </section>
 
