@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="인시그니아 반포 | 정미령 팀장">
 <meta property="og:description" content="반포 신축 3룸 아파텔 · 상세 정보 보기">
-<meta property="og:image" content="https://homecard.kr/jungmiryoung/og-card-jungmiryoung.png">
+<meta property="og:image" content="https://homecard.kr/jungmiryoung/og-card-jungmiryoung.png?v=20261011-brand">
 <meta property="og:url" content="https://homecard.kr/jungmiryoung/">
 
 <style>
@@ -31,8 +31,11 @@ body{
 .page{max-width:560px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 28px rgba(0,0,0,.05)}
 .header{padding:18px 16px 14px;border-top:4px solid var(--bronze)}
 .brandrow{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-.brand{font-weight:900;letter-spacing:2.4px;font-size:19px;line-height:1.05}
-.brand small{display:block;font-size:8px;letter-spacing:3.5px;color:#777;margin-top:4px}
+.brand{font-weight:900;letter-spacing:0;font-size:19px;line-height:1.25;white-space:nowrap}
+.brand small{display:block;font-size:11px;font-weight:600;letter-spacing:0;color:#777;margin-bottom:5px}
+.brandrow .person{flex-shrink:0}
+@media(max-width:390px){.brand{font-size:17px}.brand small{font-size:10px}}
+@media(max-width:340px){.brandrow{gap:10px}.brand{font-size:16px}.brandrow .phone{font-size:18px}}
 .person{text-align:right}
 .role{font-size:11px;font-weight:700;color:#333}
 .name{font-size:25px;font-weight:900;line-height:1.08;white-space:nowrap}
@@ -140,7 +143,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 <section class="header">
   <div class="brandrow">
-    <div class="brand">INSIGNIA<small>BANPO</small></div>
+    <div class="brand"><small>사평대로12 건물명</small>인시그니아반포</div>
     <div class="person">
       <div class="role">팀장</div>
       <div class="name">정미령</div>
